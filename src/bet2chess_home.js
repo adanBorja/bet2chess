@@ -73,7 +73,6 @@ const App = () => {
             </div>
           </div>       
         </section>
-
         <section>
           <div className="flex justify-center items-center ">
             <div className="w-1/2">
@@ -100,10 +99,73 @@ const App = () => {
               </table>
             </div>
           </div>
+        </section>        
+        <section className="mb-8">  
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <p className="mb-4"></p> {/*empty line*/}
+              <p className="mb-4">
+              At Bet2Chess, we are passionate about chess, and our goal is to empower chess players to have fun
+              and earn rewards for doing what they love
+              </p>
+            </div>
+          </div>       
+        </section>
+        {/*GET TO KNOW BET2CHESS*/}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4">GET TO KNOW BET2CHESS</h2>
+          <h2 className="text-base text-left font-bold">Why Did We Choose Vara Network?</h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <p className="mb-4 text-left">
+              Chess is a strategic game that requires the best moves and strategies to succeed. Therefore, we
+              decided to build this project using only the best, cutting-edge technology that allows us to create what
+              chess and its players truly deserve.
+              </p>
+            </div>
+          </div>  
+
+          <h2 className="text-base text-left font-bold">Virtues of Vara Network that Enhance Bet2Chess:</h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <p className="mb-4 text-left">
+              There are two virtues of Vara Network that motivated us to build this project there: Payless Transactions
+              and Signless Transactions. These features improve player interaction with our platform by eliminating
+              the current barriers in Web3 games.
+              </p>
+            </div>
+          </div>  
+
+          <h2 className="text-base text-left font-bold">Our Key Features:</h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <div className="mb-4 text-left">
+                <ul className="list-disc pl-5 space-y-y">
+                  <li className="text-gary-700"> Play and Win: Participate in chess games and earn VARA tokens.</li>
+                  <li className="text-gary-700"> Bet on Matches: Place bets on ongoing matches and earn additional rewards.</li>
+                  <li className="text-gary-700"> Advanced Technology: Benefit from the speed and efficiency of Vara Network for an exceptional user experience.</li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+
+          <p className="mb-4"></p> {/*empty line*/}
+          <p className="mb-4"></p> {/*empty line*/}
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-teal-800">
+            <div className="w-full items-center">
+              <p className="mb-4 text-1xl">
+              Chess is more than just a game; it is an intellectual pastime that has a touch of art and a
+              lot of science. It is also a means of social and intellectual engagement.
+              </p>
+              <p className="mb-4 text-2xl hover:text-gray-300">José Raul Capablanca</p>
+            </div>
+          </div>  
+          
         </section>
 
-      </main>
 
+
+      </main>
       <footer className="bg-teal-600 p-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <p className="mb-4 md:mb-0">&copy; 2024 Bet2Chess. Todos los derechos reservados.</p>
