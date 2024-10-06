@@ -5,18 +5,8 @@ import { Twitter, Instagram } from 'lucide-react';
 import mainImage          from './images/b2c_main.jpeg';
 import roadMapImage       from './images/b2ch_roadmap.jpeg';
 import makeHistoryImage   from './images/b2c_make_hoistory.jpeg';
-import news1Image from './images/image_1.jpeg';
-import news2Image from './images/image_2.jpg';
-import news3Image from './images/image_3.jpg';
-import news4Image from './images/image_4.jpg';
 
 const App = () => {
-  // Array de noticias con imágenes importadas
-  const newsItems = [
-    { title: "Gran Maestro gana torneo", desc: "Victoria sorprendente en el Campeonato Mundial", image: news1Image },
-    { title: "Nuevo récord de partida más larga", desc: "Partida dura más de 20 horas en torneo local", image: news2Image },
-    { title: "IA revoluciona estrategias de ajedrez", desc: "Nuevas tácticas descubiertas por inteligencia artificial", image: news3Image }
-  ];
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Header */}
@@ -159,13 +149,95 @@ const App = () => {
               </p>
               <p className="mb-4 text-2xl hover:text-gray-300">José Raul Capablanca</p>
             </div>
-          </div>  
-          
+          </div>
         </section>
 
+        {/*TOKENOMICS*/}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4">TOKENOMICS</h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <p className="text-left">
+              We use VARA as the primary means of reward and transaction in Bet2Chess.
+              </p>
+              <p className="text-left">
+              Players will earn VARA tokens for victories in matches and can also use them to place bets.
+              </p>
+            </div>
+          </div>
+        </section>
 
+        {/*ROADMAP*/}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4">ROADMAP</h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <ol className="list-decimal list-inside space-y-2">
+                <li className="text-left">
+                Testnet Launch with VARA Ambassadors: Initial rollout for testing and feedback from ambassadors
+                </li>
+                <li className="text-left">
+                Public Testnet Launch: Availability for a broader audience for further testing
+                </li>
+                <li className="text-left">
+                Mainnet Launch: Full deployment of the game with Play-to-Earn features and betting
+                </li>
+                <li className="text-left">
+                Betting Implementation: Addition of betting functionality for ongoing matches
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div className="flex justify-center w-full">
+            <img 
+              src={roadMapImage}
+              className="w-1/2 h-auto rounded-lg shadow-lg transition duration-300"
+            />
+          </div>
+        </section>
 
+        {/*LEGAL NOTICE*/}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4">ROADMAP</h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <p className= "mb-4 text-left">
+              The purpose of this document is to discuss Bet2Chess, the rationale behind it, our goals, and future
+              vision. Bet2Chess is currently in the development phase, and this document outlines the roadmap to be
+              followed. The information provided should not be considered exhaustive and does not imply any
+              contractual relationship. Its sole purpose is to provide relevant and reasonable information to individuals
+              interested in using Bet2Chess.
+              </p>
+              <p className= "mb-4 text-left">
+              Nothing published in this document should be interpreted as investment advice. Bet2Chess does not
+              provide any commercial or investment advice. Please consult with your appropriate licensed
+              professional before making any financial transactions
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/*MAKE HISTORY*/}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4">MAKE HISTORY!</h2>
+          <div className="flex justify-center w-full">
+            <img 
+              src={makeHistoryImage}
+              className="w-1/2 h-auto rounded-lg shadow-lg transition duration-300"
+            />
+          </div>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-full items-center">
+              <p className="mb-4 text-left">
+                Bet2Chess is about to transform online chess, offering opportunities to earn and bet on the game you
+                love. Stay tuned for our updates, follow us on social media, and be among the first to experience this
+                exciting new way to play chess.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
+      
       <footer className="bg-teal-600 p-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <p className="mb-4 md:mb-0">&copy; 2024 Bet2Chess. Todos los derechos reservados.</p>
